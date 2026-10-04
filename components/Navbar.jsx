@@ -5,11 +5,11 @@ import Link from 'next/link';
 export default function Navbar({ cartCount, cartTotal, onOpenCart, isOpenNow, statusText, restaurantName, logoUrl }) {
   return (
     <header className="sticky top-0 z-30 bg-[#140D07]/90 backdrop-blur-md border-b border-[#F56F06]/15 transition-all">
-      <div className="max-w-[1540px] mx-auto px-4 sm:px-8 lg:px-12 h-16 flex items-center justify-between">
+      <div className="max-w-[1540px] mx-auto px-4 sm:px-8 lg:px-12 h-20 flex items-center justify-between">
         
         {/* Logo & Marca */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-11 h-11 rounded-full overflow-hidden border border-[#F56F06]/40 shadow-md shadow-[#F56F06]/20 group-hover:scale-105 transition-transform bg-[#1C130B] flex items-center justify-center p-0.5">
+        <Link href="/" className="flex items-center gap-3.5 group">
+          <div className="w-13 h-13 rounded-full overflow-hidden border-2 border-[#F56F06]/50 shadow-lg shadow-[#F56F06]/25 group-hover:scale-110 transition-transform bg-[#1C130B] flex items-center justify-center p-0.5">
             <img 
               src={logoUrl || '/img/logo_oficial.png'} 
               alt={restaurantName} 

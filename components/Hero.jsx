@@ -12,8 +12,8 @@ export default function Hero({ restaurantName, slogan, desc, badge, logoUrl, onE
 
       <div className="max-w-[1540px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-12 items-center relative z-10">
         
-        {/* Columna Izquierda: Información & CTA (7 cols) */}
-        <div className="lg:col-span-7 text-center lg:text-left space-y-6">
+        {/* Columna Izquierda: Información & CTA (6 cols en lg) */}
+        <div className="lg:col-span-6 text-center lg:text-left space-y-6">
           
           {/* Badges superiores */}
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
@@ -47,7 +47,7 @@ export default function Hero({ restaurantName, slogan, desc, badge, logoUrl, onE
           <div className="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-4">
             <button
               onClick={onExploreMenu}
-              className="flex items-center gap-2.5 bg-gradient-to-r from-[#D95F00] via-[#F56F06] to-[#FF8324] hover:brightness-110 text-white font-black px-7 py-4 rounded-2xl shadow-xl shadow-[#F56F06]/35 transition-all hover:scale-105 active:scale-95 text-base md:text-lg"
+              className="flex items-center gap-2.5 bg-gradient-to-r from-[#D95F00] via-[#F56F06] to-[#FF8324] hover:brightness-110 text-white font-black px-8 py-4 rounded-2xl shadow-xl shadow-[#F56F06]/35 transition-all hover:scale-105 active:scale-95 text-base md:text-lg"
             >
               <Flame className="w-5 h-5 text-amber-200 animate-bounce" />
               <span>Explorar Menú Completo</span>
@@ -83,30 +83,30 @@ export default function Hero({ restaurantName, slogan, desc, badge, logoUrl, onE
 
         </div>
 
-        {/* Columna Derecha: Logo Gigante Emblemático & Badges Flotantes (5 cols) */}
-        <div className="lg:col-span-5 flex items-center justify-center relative">
+        {/* Columna Derecha: Logo Extra Grande & Badges Flotantes (6 cols en lg) */}
+        <div className="lg:col-span-6 flex items-center justify-center relative py-6">
           
-          {/* Halo de luz radial detrás del logo */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-[#F56F06]/30 to-amber-500/20 rounded-full blur-3xl scale-90 pointer-events-none" />
+          {/* Halo de luz radial gigante detrás del logo */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-[#F56F06]/35 via-orange-500/20 to-amber-500/25 rounded-full blur-3xl scale-110 pointer-events-none" />
 
-          {/* Contenedor del Logo */}
-          <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 group transition-transform duration-500 hover:scale-105">
+          {/* Contenedor del Logo Gigante */}
+          <div className="relative w-72 h-72 sm:w-96 sm:h-96 md:w-[440px] md:h-[440px] lg:w-[480px] lg:h-[480px] xl:w-[550px] xl:h-[550px] group transition-transform duration-500 hover:scale-105">
             
             <img 
               src={logoUrl || '/img/logo_oficial.png'} 
               alt={restaurantName} 
-              className="w-full h-full object-contain filter drop-shadow-[0_20px_40px_rgba(245,111,6,0.4)] animate-in zoom-in duration-500" 
+              className="w-full h-full object-contain filter drop-shadow-[0_25px_50px_rgba(245,111,6,0.45)] animate-in zoom-in duration-500" 
             />
 
             {/* Badge Flotante 1: Superior */}
-            <div className="absolute -top-3 -right-2 bg-[#1C130B]/95 backdrop-blur-md border border-[#F56F06]/40 text-white text-xs font-black px-3.5 py-2 rounded-2xl shadow-xl flex items-center gap-2 animate-bounce">
-              <span className="text-base">🔥</span>
+            <div className="absolute top-2 right-0 sm:-right-4 bg-[#1C130B]/95 backdrop-blur-md border border-[#F56F06]/50 text-white text-xs sm:text-sm font-black px-4 py-2.5 rounded-2xl shadow-2xl flex items-center gap-2 animate-bounce">
+              <span className="text-lg">🔥</span>
               <span>¡Sabor del Bueno!</span>
             </div>
 
             {/* Badge Flotante 2: Inferior */}
-            <div className="absolute -bottom-3 -left-2 bg-[#1C130B]/95 backdrop-blur-md border border-emerald-500/40 text-white text-xs font-black px-3.5 py-2 rounded-2xl shadow-xl flex items-center gap-2">
-              <span className="text-base">🥡</span>
+            <div className="absolute bottom-2 left-0 sm:-left-4 bg-[#1C130B]/95 backdrop-blur-md border border-emerald-500/50 text-white text-xs sm:text-sm font-black px-4 py-2.5 rounded-2xl shadow-2xl flex items-center gap-2">
+              <span className="text-lg">🥡</span>
               <span className="text-emerald-400">Pide por WhatsApp</span>
             </div>
 
