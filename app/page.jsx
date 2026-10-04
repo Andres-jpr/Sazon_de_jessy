@@ -36,7 +36,9 @@ export default function Home() {
         .select('*')
         .order('orden', { ascending: true });
 
+      let catMap = {};
       if (catData && catData.length > 0) {
+        catData.forEach(c => { catMap[c.id] = c.nombre; });
         setCategories(catData.map(c => ({
           id: c.id,
           nombre: c.nombre,
@@ -56,6 +58,7 @@ export default function Home() {
           id: p.codigo_original || p.id,
           uuid: p.id,
           cat: p.categoria_id || 'hamburguesas',
+          catNombre: catMap[p.categoria_id] || (p.categoria_id && !p.categoria_id.includes('-') ? p.categoria_id : ''),
           nombre: p.nombre,
           desc: p.descripcion || '',
           precio: parseFloat(p.precio) || 0,
@@ -254,7 +257,7 @@ export default function Home() {
       </div>
 
       {/* 5. Catálogo Grid de Productos */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-1 w-full">
+      <section className="max-w-[1540px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-12 py-10 flex-1 w-full relative z-10">
         {filteredProducts.length === 0 ? (
           <div className="text-center py-20 bg-[#1C130B] border border-[#F56F06]/15 rounded-3xl p-8 max-w-md mx-auto">
             <div className="text-5xl mb-4">🔍</div>
@@ -268,7 +271,7 @@ export default function Home() {
             </button>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-6 sm:gap-7">
             {filteredProducts.map((prod) => (
               <ProductCard
                 key={prod.id}

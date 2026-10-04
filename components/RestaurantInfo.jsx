@@ -7,7 +7,7 @@ export default function RestaurantInfo({ content, isOpenNow, statusText }) {
   const beneficios = content?.beneficios || [];
 
   return (
-    <section id="informacion-local" className="py-16 px-4 max-w-7xl mx-auto space-y-12 border-t border-[#F56F06]/15">
+    <section id="informacion-local" className="py-16 px-4 sm:px-8 lg:px-12 max-w-[1540px] mx-auto space-y-12 border-t border-[#F56F06]/15 relative z-10">
       
       {/* Sección Beneficios */}
       {beneficios.length > 0 && (

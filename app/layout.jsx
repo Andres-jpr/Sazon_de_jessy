@@ -19,7 +19,9 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Rubik:wght@600;700;800;900&display=swap" rel="stylesheet" />
       </head>
-      <body className="min-h-screen antialiased bg-[#0B0704] text-[#FAF5F0] selection:bg-[#F56F06] selection:text-white">
+      <body className="min-h-screen antialiased bg-[#0B0704] text-[#FAF5F0] selection:bg-[#F56F06] selection:text-white relative">
+        <div className="ambient-glow-left" aria-hidden="true" />
+        <div className="ambient-glow-right" aria-hidden="true" />
         {children}
       </body>
     </html>

@@ -4,8 +4,8 @@ import { Heart, Lock } from 'lucide-react';
 
 export default function Footer({ restaurantName, slogan, whatsappDisplay, whatsappNumber }) {
   return (
-    <footer className="bg-[#0B0704] border-t border-[#F56F06]/15 py-12 px-4 text-center text-xs text-[#BBA999] space-y-4">
-      <div className="max-w-7xl mx-auto space-y-3">
+    <footer className="bg-[#0B0704] border-t border-[#F56F06]/15 py-12 px-4 sm:px-8 lg:px-12 text-center text-xs text-[#BBA999] space-y-4 relative z-10">
+      <div className="max-w-[1540px] mx-auto space-y-3">
         <h4 className="font-extrabold text-base text-white font-['Rubik']">
           {restaurantName || 'La Sazón de Jessy'}
         </h4>

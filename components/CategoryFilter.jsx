@@ -20,8 +20,8 @@ export default function CategoryFilter({
   totalAvailableCount
 }) {
   return (
-    <div className="sticky top-16 z-20 bg-[#0B0704]/95 backdrop-blur-md border-b border-[#F56F06]/15 py-3 px-4 shadow-lg">
-      <div className="max-w-7xl mx-auto space-y-3">
+    <div className="sticky top-16 z-20 bg-[#0B0704]/95 backdrop-blur-md border-b border-[#F56F06]/15 py-3.5 px-4 sm:px-8 lg:px-12 shadow-lg">
+      <div className="max-w-[1540px] mx-auto space-y-3">
         
         {/* Barra de Búsqueda */}
         <div className="relative max-w-xl mx-auto">

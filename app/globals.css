@@ -28,6 +28,37 @@ body {
   color: var(--text-main);
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   overflow-x: hidden;
+  position: relative;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(245, 111, 6, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 90% 30%, rgba(245, 183, 10, 0.07) 0%, transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(217, 95, 0, 0.06) 0%, transparent 50%);
+  background-attachment: fixed;
+}
+
+/* Dynamic side lighting flares */
+.ambient-glow-left {
+  position: fixed;
+  top: 15%;
+  left: -180px;
+  width: 480px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(245, 111, 6, 0.16) 0%, rgba(217, 95, 0, 0.06) 50%, transparent 70%);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ambient-glow-right {
+  position: fixed;
+  top: 40%;
+  right: -180px;
+  width: 520px;
+  height: 650px;
+  background: radial-gradient(circle, rgba(245, 183, 10, 0.14) 0%, rgba(245, 111, 6, 0.05) 50%, transparent 70%);
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* Custom scrollbar */

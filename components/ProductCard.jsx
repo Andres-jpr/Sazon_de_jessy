@@ -50,11 +50,13 @@ export default function ProductCard({ product, quantityInCart, onModifyCart, onO
       {/* Info del Producto */}
       <div className="p-5 flex-1 flex flex-col justify-between">
         <div>
-          <div className="flex items-center justify-between gap-2 mb-1">
-            <span className="text-[10px] font-black uppercase text-[#F56F06] tracking-wider">
-              {product.cat}
-            </span>
-          </div>
+          {product.catNombre && !product.catNombre.includes('-') && (
+            <div className="flex items-center justify-between gap-2 mb-2">
+              <span className="text-[10px] font-black uppercase text-amber-400 bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 rounded-md tracking-wider">
+                {product.catNombre}
+              </span>
+            </div>
+          )}
 
           <h3 
             onClick={() => onOpenDetail(product)}

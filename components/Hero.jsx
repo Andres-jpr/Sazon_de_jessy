@@ -3,13 +3,14 @@ import { Flame, MapPin, Sparkles, Clock, Star, ShieldCheck, Heart } from 'lucide
 
 export default function Hero({ restaurantName, slogan, desc, badge, logoUrl, onExploreMenu }) {
   return (
-    <section className="relative overflow-hidden py-10 md:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#140D07] via-[#0D0805] to-[#0B0704] border-b border-[#F56F06]/15">
+    <section className="relative overflow-hidden py-12 md:py-24 px-4 sm:px-8 lg:px-12 xl:px-16 bg-gradient-to-b from-[#160E08] via-[#0E0905] to-[#0B0704] border-b border-[#F56F06]/15">
       
       {/* Luces de fondo ambientales */}
-      <div className="absolute -top-32 right-1/4 w-[500px] h-[500px] bg-[#F56F06]/18 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-0 -left-20 w-[400px] h-[400px] bg-amber-500/12 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute -top-32 right-1/4 w-[600px] h-[600px] bg-[#F56F06]/20 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/3 -left-28 w-[500px] h-[500px] bg-amber-500/15 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute -bottom-20 right-10 w-[450px] h-[450px] bg-orange-600/12 rounded-full blur-[120px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center relative z-10">
+      <div className="max-w-[1540px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-12 items-center relative z-10">
         
         {/* Columna Izquierda: Información & CTA (7 cols) */}
         <div className="lg:col-span-7 text-center lg:text-left space-y-6">
