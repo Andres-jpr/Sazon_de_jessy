@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --bg-main: #0B0704;
+  --bg-surface: #140D07;
+  --bg-card: #1C130B;
+  --bg-card-hover: #261B10;
+  --bg-input: #1F150D;
+  
+  --primario: #F56F06;
+  --primario-hover: #FF8324;
+  --primario-glow: rgba(245, 111, 6, 0.25);
+  
+  --dorado: #F5B70A;
+  --wa-verde: #25D366;
+  --wa-hover: #1DA851;
+  
+  --text-main: #FAF5F0;
+  --text-muted: #BBA999;
+  --text-subtle: #7E6F62;
+  
+  --border: rgba(245, 111, 6, 0.18);
+  --border-light: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+::-webkit-scrollbar-thumb {
+  background: #2D1E13;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primario);
+}
+
+/* Pulse badge animation */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(245, 111, 6, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(245, 111, 6, 0);
+  }
+}
+
+.pulse-glow {
+  animation: pulseGlow 2s infinite;
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(20, 13, 7, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}

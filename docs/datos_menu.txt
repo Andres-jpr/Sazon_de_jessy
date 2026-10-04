@@ -1,0 +1,49 @@
+LA SAZÓN DE JESSY — DATOS DEL MENÚ (completado por el usuario)
+=============================================================
+
+HORARIOS
+--------
+Lunes a Viernes:  5:00 pm a 11:00 pm
+Sábados:          5:00 pm a 11:00 pm
+Domingos:         5:00 pm a 11:00 pm
+
+UBICACIÓN
+---------
+Dirección: Jose Luis Tamayo Av 9 calles 14
+Referencia: (a 9 calles de la Av. José Luis Tamayo, Muey)
+Ciudad / Barrio: Muey
+
+WHATSAPP
+--------
++593 998-446-974
+
+MENÚ
+----
+HAMBURGUESAS
+  1. Sencilla                                  $ 2,00
+  2. Con huevo y queso                         $ 2,25
+  3. Con huevo y jamón                         $ 2,25
+  4. Con huevo, queso y jamón                  $ 2,75
+  5. Con huevo y tocino                        $ 2,75
+  6. Con huevo, queso y tocino                 $ 3,00
+  7. Completa (huevo-queso-tocino y jamón)     $ 3,50
+  8. Hawaiana (queso-tocino y jalea de piña)   $ 2,75
+  → Todo con papas fritas adicionales
+
+OTROS
+  9.  Salchipapa                               $ 1,75
+  10. Papi Pollo (pollo broster)               $ 3,75
+  11. Hot Dog                                  $ 1,60
+  12. Sánduche de lomo de res                  $ 2,50
+  13. Sánduche de pollo                        $ 2,50
+  14. Sánduche de lomo tejano (tocino-queso y salsa BBQ)   $ 3,50
+  15. Sánduche de pollo tejano (tocino-queso y salsa BBQ)  $ 3,50
+  → Todo con papas fritas adicionales
+
+COLORES (extraídos por muestreo)
+-------------------------------
+Primario:    #F56F06 (naranja)
+Acento:      #C95A04 (naranja oscuro)
+Texto osc.:  #0A0A0A (negro)
+Cálido:      #271C16 (marrón cálido)
+Mostaza:     #524705 (mostaza)
