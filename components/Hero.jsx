@@ -19,10 +19,14 @@ export default function Hero({ restaurantName, slogan, desc, badge, logoUrl, onE
           <span className="text-[#BBA999] font-normal">Sabor Casero Genuino</span>
         </div>
 
-        {/* Logo central opcional */}
+        {/* Logo central */}
         {logoUrl && (
-          <div className="w-24 h-24 md:w-28 md:h-28 rounded-3xl overflow-hidden border-2 border-[#F56F06]/40 shadow-2xl shadow-[#F56F06]/20 mb-6 group hover:scale-105 transition-transform">
-            <img src={logoUrl} alt={restaurantName} className="w-full h-full object-cover" />
+          <div className="w-36 h-36 md:w-48 md:h-48 mb-6 group hover:scale-105 transition-transform duration-300 drop-shadow-[0_12px_35px_rgba(245,111,6,0.35)]">
+            <img 
+              src={logoUrl} 
+              alt={restaurantName} 
+              className="w-full h-full object-contain filter drop-shadow-xl" 
+            />
           </div>
         )}
 

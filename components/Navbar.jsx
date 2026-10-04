@@ -9,12 +9,12 @@ export default function Navbar({ cartCount, cartTotal, onOpenCart, isOpenNow, st
         
         {/* Logo & Marca */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-xl overflow-hidden border border-[#F56F06]/30 shadow-lg shadow-[#F56F06]/10 group-hover:scale-105 transition-transform bg-[#1C130B] flex items-center justify-center">
-            {logoUrl ? (
-              <img src={logoUrl} alt={restaurantName} className="w-full h-full object-cover" />
-            ) : (
-              <span className="text-xl">🍔</span>
-            )}
+          <div className="w-11 h-11 rounded-full overflow-hidden border border-[#F56F06]/40 shadow-md shadow-[#F56F06]/20 group-hover:scale-105 transition-transform bg-[#1C130B] flex items-center justify-center p-0.5">
+            <img 
+              src={logoUrl || '/img/logo_oficial.png'} 
+              alt={restaurantName} 
+              className="w-full h-full object-contain" 
+            />
           </div>
           <div>
             <span className="font-extrabold text-base md:text-lg tracking-tight text-white block leading-none font-['Rubik'] group-hover:text-[#F56F06] transition-colors">
