@@ -1,5 +1,6 @@
 'use client';
 import { Plus, Minus, Eye, Sparkles } from 'lucide-react';
+import { getImgPath } from '@/lib/data';
 
 export default function ProductCard({ product, quantityInCart, onModifyCart, onOpenDetail }) {
   const isUnavailable = !product.disponible;
@@ -33,11 +34,11 @@ export default function ProductCard({ product, quantityInCart, onModifyCart, onO
 
         {/* Imagen */}
         <img
-          src={product.img || '/img/img_hamburguesa.png'}
+          src={getImgPath(product.img || '/img/img_hamburguesa.png')}
           alt={product.nombre}
           loading="lazy"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          onError={(e) => { e.currentTarget.src = '/img/img_hamburguesa.png'; }}
+          onError={(e) => { e.currentTarget.src = getImgPath('/img/img_hamburguesa.png'); }}
         />
 
         {/* Overlay hover */}

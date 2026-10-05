@@ -1,5 +1,6 @@
 'use client';
 import { Flame, MapPin, Sparkles, Clock, Star, ShieldCheck, Heart } from 'lucide-react';
+import { getImgPath } from '@/lib/data';
 
 export default function Hero({ restaurantName, slogan, desc, badge, logoUrl, onExploreMenu }) {
   return (
@@ -93,7 +94,7 @@ export default function Hero({ restaurantName, slogan, desc, badge, logoUrl, onE
           <div className="relative w-72 h-72 sm:w-96 sm:h-96 md:w-[440px] md:h-[440px] lg:w-[480px] lg:h-[480px] xl:w-[550px] xl:h-[550px] group transition-transform duration-500 hover:scale-105">
             
             <img 
-              src={logoUrl || '/img/logo_oficial.png'} 
+              src={getImgPath(logoUrl || '/img/logo_oficial.png')} 
               alt={restaurantName} 
               className="w-full h-full object-contain filter drop-shadow-[0_25px_50px_rgba(245,111,6,0.45)] animate-in zoom-in duration-500" 
             />

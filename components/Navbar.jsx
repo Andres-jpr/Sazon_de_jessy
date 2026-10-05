@@ -1,6 +1,7 @@
 'use client';
 import { ShoppingBag, Clock, ShieldCheck } from 'lucide-react';
 import Link from 'next/link';
+import { getImgPath } from '@/lib/data';
 
 export default function Navbar({ cartCount, cartTotal, onOpenCart, isOpenNow, statusText, restaurantName, logoUrl }) {
   return (
@@ -11,7 +12,7 @@ export default function Navbar({ cartCount, cartTotal, onOpenCart, isOpenNow, st
         <Link href="/" className="flex items-center gap-3.5 group">
           <div className="w-13 h-13 rounded-full overflow-hidden border-2 border-[#F56F06]/50 shadow-lg shadow-[#F56F06]/25 group-hover:scale-110 transition-transform bg-[#1C130B] flex items-center justify-center p-0.5">
             <img 
-              src={logoUrl || '/img/logo_oficial.png'} 
+              src={getImgPath(logoUrl || '/img/logo_oficial.png')} 
               alt={restaurantName} 
               className="w-full h-full object-contain" 
             />

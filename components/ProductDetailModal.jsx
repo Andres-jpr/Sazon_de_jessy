@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { X, Plus, Minus, ShoppingBag, Sparkles, Check } from 'lucide-react';
+import { getImgPath } from '@/lib/data';
 
 export default function ProductDetailModal({ product, isOpen, onClose, onAddToCart }) {
   const [quantity, setQuantity] = useState(1);
@@ -45,10 +46,10 @@ export default function ProductDetailModal({ product, isOpen, onClose, onAddToCa
             </span>
           )}
           <img
-            src={product.img || '/img/img_hamburguesa.png'}
+            src={getImgPath(product.img || '/img/img_hamburguesa.png')}
             alt={product.nombre}
             className="w-full h-full object-cover"
-            onError={(e) => { e.currentTarget.src = '/img/img_hamburguesa.png'; }}
+            onError={(e) => { e.currentTarget.src = getImgPath('/img/img_hamburguesa.png'); }}
           />
         </div>
 
